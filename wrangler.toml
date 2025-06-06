@@ -1,5 +1,5 @@
-name = "react-date-np-import"
-compatibility_date = "2024-06-06"
+name = "react-date-np"
+compatibility_date = "2025-06-06"
 
 [env.production]
 name = "react-date-np-import"
