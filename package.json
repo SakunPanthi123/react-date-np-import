@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && npx wrangler pages deploy build --project-name react-date-np-import",
+    "deploy:preview": "npm run build && npx wrangler pages deploy build --project-name react-date-np-import --compatibility-date 2024-06-06"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "wrangler": "^4.19.1"
   }
 }
